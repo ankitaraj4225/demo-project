@@ -1,0 +1,16 @@
+<p>about works!</p>
+<!-- <app-home></app-home> -->
+<!-- module driven form (when we do most of the work from module/component) -->
+<form class ="container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <input type ="text" name="firstName" placeholder = "firstName" formControlName="firstName">
+    <br>
+    <input type ="text" name="lastName" placeholder="lastName" name="name" formControlName="lastName">
+    <br>
+    <select name="languages" formControlName="languages">
+        <option value = "C++">C++</option>
+        <option value = "C++">Java</option>
+        <option value = "C++">Angular</option>
+    </select>
+    <br><br>
+    <input type = "submit" value ="Submit">
+</form>

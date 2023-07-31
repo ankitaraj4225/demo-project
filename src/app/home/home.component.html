@@ -1,0 +1,17 @@
+<p>home works!</p>
+<!-- Template driven form (when we do most of the work from template, then its template driven) -->
+<form class ="container" #userForm = "ngForm" (ngSubmit) = "onsubmit(userForm.value)">
+    <input type ="text" name="firstName" placeholder = "firstName" ngModel>
+    <br>
+    <input type ="text" name="lastName" placeholder="lastName" name="name" ngModel>
+    <br>
+    <select name="languages" ngModel>
+        <option value = "C++">C++</option>
+        <option value = "C++">Java</option>
+        <option value = "C++">Angular</option>
+    </select>
+    <br><br>
+    <input type = "submit" value ="Submit">
+  </form>
+
+  <br><br>
